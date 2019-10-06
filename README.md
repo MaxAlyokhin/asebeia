@@ -11,6 +11,7 @@ The publishing house was founded in March 2018 in Saint-Petersburg and since the
 The team's sphere of interest is humanitarian authors (cultural studies, art criticism, philosophy).
 
 ## Project implementation
+![](http://asebeia.su/src/assets/images/design.png)
 
 The project is implemented in a rather minimalistic design. The site is a SPA, where each individual "page" is a single-file component of vue (implemented using the loader vue-loader). Each such file contains html, css and js. Content of each page is loaded as necessary from the corresponding JSON-files with the help of vue-resource plugin. Also here is implemented routing for each page.
 
