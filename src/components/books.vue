@@ -84,7 +84,7 @@
   padding-left: 133px;
 }
 
-@media only screen and (max-width:1280px) {
+@media only screen and (max-width:1279px) {
   .paddingLeft {
     padding-left: 0px;
   }

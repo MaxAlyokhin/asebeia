@@ -104,9 +104,7 @@ nav a {
   padding-top: 7px;
 }
 
-#menu {
-  float: right;
-}
+
 
 .padding {
   padding-right: 100px;
@@ -135,6 +133,12 @@ nav a {
   align-items: center;
   height: 100vh;
   position: relative
+}
+
+#desktopMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Классы переходов между компонентами для vue - начало */
