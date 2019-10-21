@@ -130,7 +130,7 @@ button.blackbutton {
 	align-items: center;
 	height: 55px;
 	padding: 0;
-	font-family: helvetica-cyr-light;
+	font-family: pt;
 
 	transition: 0.2s;
 	-webkit-transition: 0.2s;
@@ -148,7 +148,7 @@ button.blackbutton div {
 	padding-top: 3px;
 	padding-bottom:2 px;
 	font-size: 360%;
-	font-family: helvetica-cyr-light;
+	font-family: pt;
 	font-weight: bold;
 }	
 

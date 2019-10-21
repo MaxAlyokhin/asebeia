@@ -33,7 +33,7 @@ html {
 
 body {
   height:inherit;
-  font-family: helvetica-cyr-light;
+  font-family: pt;
   background-color:#f3f3f3;
   -webkit-font-smoothing: antialiased; 
   overflow-y: scroll; 
@@ -49,7 +49,7 @@ header {
 
 pre {
   white-space: pre-wrap; 
-  font-family: helvetica-cyr-light;
+  font-family: pt;
 }
 
 .container {
