@@ -11,12 +11,12 @@ The publishing house was founded in March 2018 in Saint-Petersburg and since the
 The team's sphere of interest is humanitarian authors (cultural studies, art criticism, philosophy).
 
 ## Project implementation
-![](http://asebeia.su/src/assets/images/design.png)
+![](https://asebeia.su/src/assets/images/design.png)
 
 The project is implemented in a rather minimalistic design. The site is a SPA, where each individual "page" is a single-file component of vue (implemented using the loader vue-loader). Each such file contains html, css and js. Content of each page is loaded as necessary from the corresponding JSON-files with the help of vue-resource plugin. Also here is implemented routing for each page.
 
 You can check the website by clicking here:
-http://asebeia.su
+https://asebeia.su
 
 # Асебия
 
@@ -35,4 +35,4 @@ http://asebeia.su
 Проект реализован в довольно минималистичном дизайне. Сайт является SPA-приложением, где каждая отдельная "страница" представляет собой однофайловый компонент vue (реализовано с помощью загрузчика vue-loader). В каждом таком файле описаны html, css и js. Контент каждой страницы подгружается по необходимости из соответствующих JSON-файлов с помощью плагина vue-resource. Также здесь реализован роутинг для каждой страницы.
 
 Сайт доступен по адресу:
-http://asebeia.su
+https://asebeia.su
