@@ -1,0 +1,231 @@
+@font-face {
+  font-family: helvetica-cyr-light; 
+  src: url(../fonts/helvetica_neue_cyr_light.otf);
+}
+
+@font-face {
+  font-family: helvetica-cyr-bold; 
+  src: url(../fonts/helvetica_neue_cyr_bold.otf);
+}
+
+@font-face {
+  font-family: austin; 
+   src: url(../fonts/austin.otf);
+}
+
+/* @font-face {
+  font-family: pt; 
+  src: url(../assets/fonts/pt-serif.ttf);
+} */
+
+*, *:before, *:after {
+  margin: 0; 
+  outline: none; 
+}
+
+::-moz-focus-inner {
+	border:none; 
+}	
+
+html, body, #__nuxt, #__layout {
+	height:100%;
+}
+
+body {
+  height:inherit;
+  font-family: helvetica-cyr-light;
+  background-color:#f3f3f3;
+  -webkit-font-smoothing: antialiased; 
+  overflow-y: scroll; 
+}
+
+header {
+  z-index: 10;  
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 100px;
+}
+
+pre {
+  white-space: pre-wrap; 
+  font-family: helvetica-cyr-light;
+}
+
+.container {
+  position: relative;  
+  line-height: 1.5em;
+}
+
+.sub-container {
+  margin-top: 113px;
+  margin-bottom: 100px;
+  position: relative;
+  opacity: 1;
+}
+
+.sub-container.loading {
+  opacity: 0;
+}
+
+nav {
+  font-size: 16px;
+  font-weight: 500;
+}
+  
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: 1s linear;
+  -webkit-transition: 1s linear;
+  -moz-transition: 1s linear;
+  -ms-transition: 1s linear;
+  -o-transition: 1s linear;
+}
+
+.black > a {
+  color: rgba(10, 10, 10, 1) !important;
+}
+
+.white {
+  color: rgb(255, 255, 255);
+}
+
+#logo {
+  font-family: austin;
+  font-size: 20pt;
+  float: left;
+  margin-left: 100px;
+}
+
+.navigation { 
+  float: right;
+  margin-right: 100px;
+  padding-top: 7px;
+}
+
+
+
+.padding {
+  padding-right: 100px;
+}
+
+#imgDesktop {
+  height: 830px;
+}
+
+#imgDesktop {
+  display: block;
+}
+
+#imgMobile {
+  display: none;
+}
+
+#preloader.loading {
+  display: flex !important;
+}
+
+#preloader {
+  z-index: 100;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative
+}
+
+#desktopMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Классы переходов между компонентами для vue - начало */
+
+.switch-enter-active, .switch-leave-active {
+  transition:all 700ms cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition:all 700ms cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition:all 700ms cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition:all 700ms cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition:all 700ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.switch-enter {
+  opacity: 0;
+}
+
+.switch-enter-to {
+  opacity: 1;  
+}
+
+.switch-leave {
+  opacity: 1;
+}
+
+.switch-leave-to {
+  opacity: 0;
+}
+
+/* Классы переходов между компонентами для vue - конец */ 
+
+/* Кастомный скроллбар - начало */
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Бегунок */
+::-webkit-scrollbar-thumb {
+  border-radius: 300px;
+  -webkit-border-radius: 300px;
+  -moz-border-radius: 300px;
+  -ms-border-radius: 300px;
+  -o-border-radius: 300px;
+  background: rgba(131, 131, 131, 0.466);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+/* Кастомный скроллбар - конец */
+
+/* Кнопка "наверх" - начало */
+
+.scrollup {
+  position: fixed;
+  display: none;
+  bottom: 0px;
+  left: calc(50% - 65px);
+  padding: 50px 50px 20px 50px;
+  animation: cursor_scroll 1.5s ease-in-out infinite;
+  -moz-animation: cursor_scroll 1.5s ease-in-out infinite;
+  -o-animation: cursor_scroll 1.5s ease-in-out infinite;
+  -ms-animation: cursor_scroll 1.5s ease-in-out infinite;
+  -webkit-animation: cursor_scroll 1.5s ease-in-out infinite;
+  opacity: 0.5;
+}
+
+.scrollup:hover {
+  opacity: 1;
+}
+
+.scrollup > img {
+  height: auto;
+}
+
+@keyframes cursor_scroll { /* Анимация движения стрелки */
+  0% { transform:translate(0); -webkit-transform:translate(0); -moz-transform:translate(0); -ms-transform:translate(0); -o-transform:translate(0); }
+  50%{ transform:translate(0, -5px); -webkit-transform:translate(0, -5px); -moz-transform:translate(0, -5px); -ms-transform:translate(0, -5px); -o-transform:translate(0, -5px); }
+  100%{ transform:translate(0); -webkit-transform:translate(0); -moz-transform:translate(0); -ms-transform:translate(0); -o-transform:translate(0); }
+}
+
+/* Кнопка "наверх" - конец */
+
+
+/* Breakpoints */
+
+#mobileMenu{
+  display: none;
+}

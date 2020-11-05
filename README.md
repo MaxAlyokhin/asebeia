@@ -2,7 +2,7 @@
 
 ## The official website for the book publishing house Asebeia from St. Petersburg.
 
-Instruments: HTML5, CSS3, Flexbox, JS, Babel, vue.js, jQuery, Webpack, VS Code, npm
+Instruments: HTML5, CSS3, Flexbox, JS, Babel, Nuxt.js, vue.js, jQuery, Webpack, VS Code, npm
 
 ## About publishing house
 
@@ -13,16 +13,29 @@ The team's sphere of interest is humanitarian authors (cultural studies, art cri
 ## Project implementation
 ![](https://asebeia.su/src/assets/images/design.png)
 
-The project is implemented in a rather minimalistic design. The site is a SPA, where each individual "page" is a single-file component of vue (implemented using the loader vue-loader). Each such file contains html, css and js. Content of each page is loaded as necessary from the corresponding JSON-files with the help of vue-resource plugin. Also here is implemented routing for each page.
+The project is implemented in a rather minimalistic design. The site is a SPA with SSR, where each individual "page" is a single-file component of vue (implemented using the loader vue-loader). Each such file contains html, css and js. Content of each page is loaded as necessary from the corresponding JSON-files with the help of vue-resource plugin. Also here is implemented routing for each page.
 
 You can check the website by clicking here:
 https://asebeia.su
+
+# Install dependencies
+$ npm install
+
+# Serve with hot reload at localhost:3000
+$ npm run dev
+
+# Build for production and launch server
+$ npm run build
+$ npm start
+
+# Generate static project
+$ npm run generate
 
 # Асебия
 
 ## Официальный сайт для книжного издательства Асебия
 
-Инструменты: HTML5, CSS3, Flexbox, JS, Babel, vue.js, jQuery, Webpack, VS Code, npm
+Инструменты: HTML5, CSS3, Flexbox, JS, Babel, Nuxt.js, vue.js, jQuery, Webpack, VS Code, npm
 
 ## Об издательстве
 
@@ -32,7 +45,7 @@ https://asebeia.su
 
 ## Реализация проекта
 
-Проект реализован в довольно минималистичном дизайне. Сайт является SPA-приложением, где каждая отдельная "страница" представляет собой однофайловый компонент vue (реализовано с помощью загрузчика vue-loader). В каждом таком файле описаны html, css и js. Контент каждой страницы подгружается по необходимости из соответствующих JSON-файлов с помощью плагина vue-resource. Также здесь реализован роутинг для каждой страницы.
+Проект реализован в довольно минималистичном дизайне. Сайт является SPA-приложением с server-side рендерингом, где каждая отдельная "страница" представляет собой однофайловый компонент vue (реализовано с помощью загрузчика vue-loader). В каждом таком файле описаны html, css и js. Контент каждой страницы подгружается по необходимости из соответствующих JSON-файлов с помощью плагина vue-resource. Также здесь реализован роутинг для каждой страницы.
 
 Сайт доступен по адресу:
 https://asebeia.su

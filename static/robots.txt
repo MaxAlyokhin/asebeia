@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://asebeia.su/sitemap.xml
+Host: https://asebeia.su
