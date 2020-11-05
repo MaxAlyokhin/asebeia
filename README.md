@@ -18,17 +18,17 @@ The project is implemented in a rather minimalistic design. The site is a SPA wi
 You can check the website by clicking here:
 https://asebeia.su
 
-Install dependencies
+Install dependencies:
 $ npm install
 
-Serve with hot reload at localhost:3000
+Serve with hot reload at localhost:3000:
 $ npm run dev
 
-Build for production and launch server
+Build for production and launch server:
 $ npm run build
 $ npm start
 
-Generate static project
+Generate static project:
 $ npm run generate
 
 # Асебия
