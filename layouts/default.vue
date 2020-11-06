@@ -1,8 +1,10 @@
 <template>
   <div style="height: 100%">
     <menu-component />
-    <transition name="fade">
-    <nuxt />
+    <transition name="fade"> 
+      
+      <router-view />
+      <!-- <nuxt /> -->
     </transition>
     <a href="#" class="scrollup"><img src="/favicons/top.png" width="30" alt=""></a>
   </div>
@@ -61,8 +63,9 @@ export default {
 
 <style>
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 1.5s;
+  transition: opacity .5s;
 }
+
 .fade-enter, .fade-leave-to {
   opacity: 0;
 }

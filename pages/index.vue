@@ -50,6 +50,7 @@ export default {
       $(".menu")
         .addClass("white")
         .removeClass("black");  
+      document.querySelector('#home').style.opacity = 1;
     });
   }
 };
@@ -83,6 +84,9 @@ export default {
 
 #home {
   background-image: url(../static/images/hello-home.jpg);
+  opacity: 0;
+  transition: opacity 1.5s;
+  transition-delay: .5s;
 }
 
 #grt {

@@ -1,4 +1,4 @@
-<template>
+<template> 
   <div class="container">
     <div id="about" class="sub-container">
       <p class="text-center">
@@ -55,6 +55,7 @@ export default {
       $("span.hamburger-inner").addClass("black_mobile");
       $("span.hamburger-inner::after").addClass("black_mobile");
       $("span.hamburger-inner::before").addClass("black_mobile");
+      document.querySelector('#about').style.opacity = 1;
     });
   }
 };
@@ -63,5 +64,8 @@ export default {
 <style>
 #about {
   padding: 100px 100px 0px 100px;
+  opacity: 0;
+  transition: opacity 1.5s;
+  transition-delay: .5s;
 }
 </style>

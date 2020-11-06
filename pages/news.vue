@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="sub-container">
+    <div id="news-container" class="sub-container">
       <!-- Контент не показывается во время загрузки -->
       <div
         id="news"
@@ -74,6 +74,7 @@ export default {
       $("span.hamburger-inner").addClass("black_mobile");
       $("span.hamburger-inner::after").addClass("black_mobile");
       $("span.hamburger-inner::before").addClass("black_mobile");
+      document.querySelector('#news-container').style.opacity = 1;
     });
   }
 };
@@ -90,5 +91,11 @@ export default {
 
 .widthImg {
   width: 100%;
+}
+
+#news-container {
+  opacity: 0;
+  transition: opacity 1.5s;
+  transition-delay: .5s;
 }
 </style>

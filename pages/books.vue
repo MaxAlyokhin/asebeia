@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <div class="sub-container">
-      <!-- Контент не показывается во время загрузки -->
-      <div
+    <div id="books-container" class="sub-container">
+      <!-- Контент не показывается во время загрузки --> 
+        <div
         id="books"
         v-for="(books, index) in booksArray"
         v-bind:index="index"
@@ -101,6 +101,7 @@ export default {
       $("span.hamburger-inner").addClass("black_mobile");
       $("span.hamburger-inner::after").addClass("black_mobile");
       $("span.hamburger-inner::before").addClass("black_mobile");
+      document.querySelector('#books-container').style.opacity = 1;
     });
   }
 };
@@ -120,5 +121,11 @@ export default {
   .paddingLeft {
     padding-left: 3px;
   }
+}
+
+#books-container {
+  opacity: 0;
+  transition: opacity 1.5s;
+  transition-delay: .5s;
 }
 </style>
