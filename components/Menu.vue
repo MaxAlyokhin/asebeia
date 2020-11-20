@@ -27,7 +27,12 @@
         <div class="table-cell">
           <ul class="mobile">
             <li class="mobile">
-              <button id="feed" class="blackbutton" onclick="main = 0; MobileMenu();" type="button">
+              <button
+                id="feed"
+                class="blackbutton"
+                onclick="main = 0; someday = 0; MobileMenu();"
+                type="button"
+              >
                 <div class="text-center">
                   <router-link to="/news">новости</router-link>
                 </div>
@@ -37,7 +42,7 @@
               <button
                 id="about-button"
                 class="blackbutton"
-                onclick="main = 0; MobileMenu();"
+                onclick="main = 0; someday = 0; MobileMenu();"
                 type="button"
               >
                 <div class="text-center">
@@ -49,7 +54,7 @@
               <button
                 id="books"
                 class="blackbutton"
-                onclick="main = 0; MobileMenu();"
+                onclick="main = 0; someday = 0; MobileMenu();"
                 type="button"
               >
                 <div class="text-center">
@@ -63,7 +68,9 @@
 
       <div id="titleMenu">
         <p id="title" class="text-center">
-          <router-link to="/" onclick="main = 1; onMain()">асебия</router-link>
+          <router-link to="/" onclick="main = 1; someday = 0; onMain()"
+            >асебия</router-link
+          >
         </p>
       </div>
       <div id="title_bg"></div>
@@ -73,9 +80,7 @@
 </template>
 
 <script>
-
 export default {
-    
   methods: {
     blackFunction: function() {
       /* Переключатель цвета меню. Если true, то присваивается класс black в index.html */
@@ -90,6 +95,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
-
+<style></style>

@@ -1,38 +1,42 @@
 <template>
-<div class="container" style="height: 100%">
-  <div id="home">
-    <div id="read">
-      <p id="msg">читать</p>
-      <div id="cursor">
-        <span>→</span>
+  <div class="container" style="height: 100%">
+    <div id="home">
+      <div id="read">
+        <p id="msg">читать</p>
+        <div id="cursor">
+          <span>→</span>
+        </div>
+        <div id="formats">
+          <a
+            href="texts/Штурмуя культуру. Утопический самиздат от леттризма до Class War.pdf"
+            target="_blank"
+            >pdf</a
+          >
+        </div>
       </div>
-      <div id="formats">
-        <a
-          href="texts/Штурмуя культуру. Утопический самиздат от леттризма до Class War.pdf"
-          target="_blank"
-        >pdf</a>
+    </div>
+    <div id="grt">
+      <div id="read">
+        <p id="msg">читать</p>
+        <div id="cursor">
+          <span>→</span>
+        </div>
+        <div id="formats">
+          <a
+            href="texts/Алехина, Гройс, Павленский, Пепперштейн, Плуцер-Сарно, Тер-Оганьян, Шнуров - Гулаг расходящихся тропок.pdf"
+            target="_blank"
+            >pdf</a
+          >
+          |
+          <a
+            href="texts/Алехина, Гройс, Павленский, Пепперштейн, Плуцер-Сарно, Тер-Оганьян, Шнуров - Гулаг расходящихся тропок.fb2"
+            target="_blank"
+            >fb2</a
+          >
+        </div>
       </div>
     </div>
   </div>
-  <div id="grt">
-    <div id="read">
-      <p id="msg">читать</p>
-      <div id="cursor">
-        <span>→</span>
-      </div>
-      <div id="formats">
-        <a
-          href="texts/Алехина, Гройс, Павленский, Пепперштейн, Плуцер-Сарно, Тер-Оганьян, Шнуров - Гулаг расходящихся тропок.pdf"
-          target="_blank"
-        >pdf</a> |
-        <a
-          href="texts/Алехина, Гройс, Павленский, Пепперштейн, Плуцер-Сарно, Тер-Оганьян, Шнуров - Гулаг расходящихся тропок.fb2"
-          target="_blank"
-        >fb2</a>
-      </div>
-    </div>
-  </div>
-</div>
 </template>
 
 <script>
@@ -49,15 +53,22 @@ export default {
         .removeClass("black");
       $(".menu")
         .addClass("white")
-        .removeClass("black");  
-      document.querySelector('#home').style.opacity = 1;
+        .removeClass("black");
+      $("p#title").removeClass("black_mobile");
+      $("div#title_bg").removeClass("black_mobile");
+      $("hr.menu-hr").removeClass("black_mobile");
+      $("span.hamburger-inner").removeClass("black_mobile");
+      $("span.hamburger-inner::after").removeClass("black_mobile");
+      $("span.hamburger-inner::before").removeClass("black_mobile");
+      document.querySelector("#home").style.opacity = 1;
     });
   }
 };
 </script>
 
 <style>
-#home, #grt {
+#home,
+#grt {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -69,7 +80,8 @@ export default {
 }
 
 @media screen and (max-width: 1234px) {
-  #home, #grt {
+  #home,
+  #grt {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -81,12 +93,11 @@ export default {
   }
 }
 
-
 #home {
   background-image: url(../static/images/hello-home.jpg);
   opacity: 0;
   transition: opacity 1.5s;
-  transition-delay: .5s;
+  transition-delay: 0.5s;
 }
 
 #grt {
