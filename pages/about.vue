@@ -1,11 +1,13 @@
-<template> 
+<template>
   <div class="container">
     <div id="about" class="sub-container">
       <p class="text-center">
         <b>О нас</b>
       </p>
       <br />
-      <pre>Асебия – частное издательство, запущенное 1 марта 2018 года. Цель нашей работы – обращение к несвоевременным, неуслышанным и нетрадиционно сформулированным позициям. Мы надеемся, что сегодня в России в плоскости книгоиздания ещё возможен бунт или, по меньшей мере, вызов. Поэтому наше название отсылает к тем ситуациям, в которых книга становится не только литературным, но и политическим событием.</pre>
+      <pre>
+Асебия – частное издательство, запущенное 1 марта 2018 года. Цель нашей работы – обращение к несвоевременным, неуслышанным и нетрадиционно сформулированным позициям. Мы надеемся, что сегодня в России в плоскости книгоиздания ещё возможен бунт или, по меньшей мере, вызов. Поэтому наше название отсылает к тем ситуациям, в которых книга становится не только литературным, но и политическим событием.</pre
+      >
       <br />
       <br />
       <p>
@@ -23,17 +25,16 @@
         <b>Где купить:</b>
       </p>
       <br />
-      <pre>Москва<br /><a href="http://www.falanster.su/">Фаланстер</a></pre>
-      <pre><a href="http://primuzee.ru/">Циолковский</a></pre>
-      <pre><a href="http://wordorder.ru/">Порядок слов в Электротеатре</a></pre>
+      <pre>Москва<br /><a target="_blank" href="http://www.falanster.su/">Фаланстер</a></pre>
+      <pre><a target="_blank" href="http://primuzee.ru/">Циолковский</a></pre>
+      <pre><a target="_blank" href="http://wordorder.ru/">Порядок слов в Электротеатре</a></pre>
       <br />
       <pre>Санкт-Петербург<br /><a href="https://www.podpisnie.ru/">Подписные издания</a></pre>
-      <pre><a href="https://www.vse-svobodny.com/">Все свободны</a></pre>
-      <pre><a href="http://wordorder.ru/">Порядок слов</a></pre>
-      <pre><a href="https://vk.com/frngt">Фаренгейт 451</a></pre>
+      <pre><a target="_blank" href="https://www.vse-svobodny.com/">Все свободны</a></pre>
+      <pre><a target="_blank" href="http://wordorder.ru/">Порядок слов</a></pre>
+      <pre><a target="_blank" href="https://vk.com/frngt">Фаренгейт 451</a></pre>
       <br />
-      <pre>Казань<br /><a href="https://smenabookstore.ru/shop/neknigi/">Смена</a></pre>
-      
+      <pre>Казань<br /><a target="_blank" href="https://smenabookstore.ru/shop/neknigi/">Смена</a></pre>
     </div>
   </div>
 </template>
@@ -55,7 +56,8 @@ export default {
       $("span.hamburger-inner").addClass("black_mobile");
       $("span.hamburger-inner::after").addClass("black_mobile");
       $("span.hamburger-inner::before").addClass("black_mobile");
-      document.querySelector('#about').style.opacity = 1;
+      main = 0;
+      document.querySelector("#about").style.opacity = 1;
     });
   }
 };
@@ -66,6 +68,6 @@ export default {
   padding: 100px 100px 0px 100px;
   opacity: 0;
   transition: opacity 1.5s;
-  transition-delay: .5s;
+  transition-delay: 0.5s;
 }
 </style>

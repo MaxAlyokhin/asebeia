@@ -1,8 +1,8 @@
 {
-  "name": "another-site",
+  "name": "asebeia",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
-  "author": "",
+  "description": "The official website for the book publishing house Asebeia from St. Petersburg",
+  "author": "Max Alyokhin",
   "private": true,
   "scripts": {
     "dev": "nuxt",
